@@ -1,0 +1,41 @@
+# Virtual environment
+venv/
+env/
+
+# Python cache files
+*.pyc
+__pycache__/
+
+# Instance folder
+instance/
+
+# Pytest cache
+.pytest_cache/
+
+# Coverage reports
+.coverage
+htmlcov/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Byte-compiled Python files
+*.pyo
+
+# IDE-specific files
+.vscode/
+.idea/
+*.vscode/
+*.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Vercel-specific files
+vercel-build.log

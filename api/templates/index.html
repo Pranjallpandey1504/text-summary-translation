@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Processor</title>
+</head>
+<body>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".txt">
+        <button type="submit">Process</button>
+    </form>
+
+    {% if full_trans_path %}
+    <div>
+        <h3>Download Full Translation:</h3>
+        <a href="{{ url_for('download', filename='full_translation.txt') }}">Full Translation</a>
+    </div>
+    {% endif %}
+
+    {% if summary_trans_path %}
+    <div>
+        <h3>Download Summary Translation:</h3>
+        <a href="{{ url_for('download', filename='summary_translation.txt') }}">Summary Translation</a>
+    </div>
+    {% endif %}
+</body>
+</html>
